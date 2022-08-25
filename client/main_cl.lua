@@ -47,10 +47,13 @@ Citizen.CreateThread(function()
 					local playerName = GetPlayerName(player)
 
 					RemoveBlip(blips[player]) 	-- Delete blip of the player (to be refresh)
+					--print("removeblips")
 					
 					if player.job == currentPlayer.job or ConfigPJB.setup == 1 then	-- If the player had the same job than the current player OR if the setup config indicate to see ALL players
 					
 						if currentPlayer.job.grade >= ConfigPJB.mingrade or ConfigPJB.setup == 1 then 		-- If the current player had enough grade level, he can see collegues
+						
+							--print("add blip")
 						
 							local new_blip = AddBlipForEntity(playerPed)
 
