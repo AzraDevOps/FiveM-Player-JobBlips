@@ -1,4 +1,4 @@
-# FiveM-Player-JobBlips
+# HarryJobBlips
 
 A simple resource for FiveM that adds player blips to the map and minimap selected by Jobs & grade
 
